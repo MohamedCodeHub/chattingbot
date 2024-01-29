@@ -1,5 +1,5 @@
 import React from 'react';
-import {Person,ChatDots} from 'react-bootstrap-icons'
+// import {Person,ChatDots} from 'react-bootstrap-icons'
 
 export default function ChatMessage(props) {
   return (
@@ -9,11 +9,11 @@ export default function ChatMessage(props) {
   props.user ? (
     <span className='message-right'>
       <span className='message-text'>{props.message}</span>
-      <Person className='message-icon'/>
+      {/* <Person className='message-icon'/> */}
     </span>
   ):(
     <span className='message-left'>
-    <ChatDots className='message-icon'/>
+    {/* <ChatDots className='message-icon'/> */}
     <span className='message-text'>{props.message}</span>
 </span>
   )
